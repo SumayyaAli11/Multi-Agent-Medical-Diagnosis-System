@@ -53,21 +53,8 @@ The system is composed of multiple agents, each designed for a specific subtask,
 
 ## 🗂 Project Structure
 
-├── backend/
-│ ├── app.py # FastAPI backend application
-│ ├── agents.py # Core agent logic and orchestration
-│ ├── models.py # Pydantic schemas and models
-│ ├── config.py # Environment/configuration variables
-│ └── requirements.txt # Backend dependencies
-│
-├── frontend/
-│ ├── app.py # Streamlit-based patient-facing UI
-│ └── requirements.txt # Frontend dependencies
-│
-├── data/
-│ └── training.csv # Dataset used for disease-symptom mapping
-│
-└── README.md # This file
+![image](https://github.com/user-attachments/assets/785c30a3-66da-4f27-ba00-f75baf7a1c3d)
+
 ---
 
 ## 🚀 How to Run
