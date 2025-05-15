@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# FastAPI / Streamlit cache
+*.log
+*.sqlite3
+*.db
+.streamlit/
+.ipynb_checkpoints/
+*.env
+.env
+
+# VS Code / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Pytest / testing
+.pytest_cache/
+coverage/
+htmlcov/
+.tox/
+
+# Docker
+*.pid
+*.tar
+*.gz
+*.zip
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+
+# Ignore secrets if any
+secrets.json
+config.yaml
+
