@@ -15,3 +15,10 @@ class DiseasePrediction(BaseModel):
 class DiagnosisResponse(BaseModel):
     predictions: List[DiseasePrediction]
     report: str
+
+class EvaluationResult(BaseModel):
+    accuracy: float
+    precision: float
+    recall: float  # True Positive Rate
+    f1_score: float
+    confusion_matrix: Optional[dict] = None

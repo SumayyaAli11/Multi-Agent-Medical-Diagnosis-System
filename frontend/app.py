@@ -49,6 +49,7 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         color: #222;  /* Almost black */
+        width:900px;
     }
     
 </style>
@@ -97,21 +98,21 @@ def display_diagnosis(results: Dict):
         st.markdown(f'<div class="report-card">{results["report"]}</div>', unsafe_allow_html=True)
 
 def main():
-    with st.sidebar:
+    # with st.sidebar:
 
-        st.subheader("Configuration")
+    #     st.subheader("Configuration")
         
-    # Groq API Key Input
-        api_key = st.text_input("Groq API Key:", 
-                          type="password",
-                          value=os.getenv("GROQ_API_KEY", ""))
+    # # Groq API Key Input
+    #     api_key = st.text_input("Groq API Key:", 
+    #                       type="password",
+    #                       value=os.getenv("GROQ_API_KEY", ""))
     
      # Validate API key
-        if not api_key:
-            st.warning("⚠️ Please enter your GROQ API key to proceed. Don't have? refer : https://console.groq.com/keys ")
-        if st.button("Reset Session"):
-            st.session_state.clear()
-            st.rerun()
+        # if not api_key:
+        #     st.warning("⚠️ Please enter your GROQ API key to proceed. Don't have? refer : https://console.groq.com/keys ")
+        # if st.button("Reset Session"):
+        #     st.session_state.clear()
+        #     st.rerun()
         # st.subheader("Workflow Diagram")
         # try:
         #     graph_img = diagnosis_chain.get_graph().draw_mermaid_png()

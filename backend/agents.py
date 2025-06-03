@@ -62,10 +62,10 @@ def build_medical_retriever(csv_path: str):
     )
     
     vectorstore = FAISS.from_documents(splits, embeddings)
-    return vectorstore.as_retriever(search_kwargs={"k": 5})
+    return vectorstore.as_retriever(search_kwargs={"k": 4})
 
 # Initialize retriever
-medical_retriever = build_medical_retriever("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\testing.csv")
+medical_retriever = build_medical_retriever("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\new_train_set.csv")
 
 # 3. Agent Definitions
 class AgentState(TypedDict):
