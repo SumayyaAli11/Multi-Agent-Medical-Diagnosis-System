@@ -145,8 +145,8 @@ def main():
         
         # Load symptom options (in a real app, load from your dataset)
         symptom_options = [
-            "itching", "skin_rash", "fatigue", "headache", 
-            "fever", "cough", "joint_pain", "nausea"
+            "itching", "skin_rash", "headache", 
+            "fever", "cough", "joint_pain"
         ]  # Add all your symptoms here
         
         structured_symptoms = {

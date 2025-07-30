@@ -5,8 +5,8 @@ def main():
     # Initialize evaluator
     evaluator = MedicalDiagnosisEvaluator("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\new_test_set.csv")
     
-    # Run evaluation on a sample (e.g., 100 cases)
-    metrics = evaluator.evaluate(sample_size=20)
+    # Run evaluation on a sample 
+    metrics = evaluator.evaluate()
     
     print("\nEvaluation Metrics:")
     print(f"Accuracy: {metrics['accuracy']:.2%}")
