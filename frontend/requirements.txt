@@ -3,3 +3,5 @@ requests==2.31.0
 pandas==2.2.1
 python-dotenv==1.0.1
 ipython
+seaborn==0.13.2
+matplotlib==3.8.3

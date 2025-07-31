@@ -11,7 +11,7 @@ from langchain_core.output_parsers import StrOutputParser
 import pandas as pd
 from config import settings
 from models import SymptomInput, DiseasePrediction, DiagnosisResponse
-from IPython.display import Image, display 
+#from IPython.display import Image, display 
 import os  
 
 
@@ -65,7 +65,7 @@ def build_medical_retriever(csv_path: str):
     return vectorstore.as_retriever(search_kwargs={"k": 4})
 
 # Initialize retriever
-medical_retriever = build_medical_retriever("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\new_train_set.csv")
+medical_retriever = build_medical_retriever("/app/data/new_train_set.csv")
 
 # 3. Agent Definitions
 class AgentState(TypedDict):

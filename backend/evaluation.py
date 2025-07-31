@@ -3,8 +3,8 @@ from typing import List, Dict
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 from sklearn.metrics import confusion_matrix
 from tqdm import tqdm
-import seaborn as sns
-import matplotlib.pyplot as plt
+#import seaborn as sns
+#import matplotlib.pyplot as plt
 import os
 from agents import diagnosis_chain
 
@@ -71,13 +71,13 @@ class MedicalDiagnosisEvaluator:
         cm_df = pd.DataFrame(cm, index=classes, columns=classes)
         cm_df.to_csv(output_path)
         
-        plt.figure(figsize=(12, 10))
-        sns.heatmap(cm_df, annot=True, fmt='d', cmap='Blues')
-        plt.title('Confusion Matrix')
-        plt.ylabel('True Diagnosis')
-        plt.xlabel('Predicted Diagnosis')
-        plt.tight_layout()
-        plt.savefig("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\confusion_matrix.png")
-        plt.close()
+        # plt.figure(figsize=(12, 10))
+        # #sns.heatmap(cm_df, annot=True, fmt='d', cmap='Blues')
+        # plt.title('Confusion Matrix')
+        # plt.ylabel('True Diagnosis')
+        # plt.xlabel('Predicted Diagnosis')
+        # plt.tight_layout()
+        # plt.savefig("D:\\MAYNOOTH\\SEM 2\\SUMMER PROJECT\\DATASET\\confusion_matrix.png")
+        # plt.close()
         
         return cm_df

@@ -9,7 +9,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = (
+    "http://backend:8000" if os.path.exists("/.dockerenv") 
+    else os.getenv("BACKEND_URL", "http://localhost:8000")
+)
 
 # Set page config
 st.set_page_config(
