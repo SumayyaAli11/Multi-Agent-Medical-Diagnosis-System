@@ -57,22 +57,45 @@ The system is composed of multiple agents, each designed for a specific subtask,
 
 ---
 
-## 🚀 How to Run
+## 🛠️ Prerequisites
 
-### 1. Backend (FastAPI)
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn app:app --reload
-```
-###2. Frontend (Streamlit)
-```bash
-cd frontend
-pip install -r requirements.txt
-streamlit run app.py
-```
+Make sure you have the following installed:
+- Docker Desktop (Windows/Mac) or Docker Engine (Linux)
+- Docker Compose
+- At least 4 GB RAM available for Docker
 
-Make sure both backend and frontend are running on separate terminals.
+## 🚀 How to Run (Docker Compose)
+
+### 1.Clone the Repository
+```bash
+git clone https://github.com/SumayyaAli11/Multi-Agent-Medical-Diagnosis-System.git
+cd Multi-Agent-Medical-Diagnosis-System
+```
+---
+
+### 2. Ensure Docker is Running
+- Start Docker Desktop and wait until it shows "Docker is running".
+
+---
+
+### 3. Build and Run Containers
+```bash
+docker-compose up --build
+```
+---
+
+### 4. Access the Application
+- Frontend (Streamlit UI) → http://localhost:8501
+- Backend (FastAPI docs) → http://localhost:8000/docs
+
+---
+
+### 5. Stop the Application
+- Press CTRL + C in the terminal, then run:
+```bash
+docker-compose down
+```
+---
 
 🔧 Tech Stack
 Python, FastAPI, Streamlit
@@ -91,13 +114,6 @@ AWS EC2 for deployment
 Custom medical dataset stored in data/training.csv downloaded from Kaggle:https://www.kaggle.com/datasets/kaushil268/disease-prediction-using-machine-learning 
 
 Each row represents a disease and associated binary symptom indicators
-
-🧪 Status
-🛠 Currently in development
-Key agents are being integrated and tested. Initial prototype with symptom extraction and disease retrieval pipeline is functional.
-
-🤝 Contributions & Collaboration
-This is a thesis project under development and not open for external contribution at this stage. If you're interested in collaboration or research-based inquiry, feel free to reach out via email or LinkedIn.
 
 📬 Contact
 Sumayya Ali
